@@ -1,0 +1,16 @@
+create table if not exists object_mapper_serailizer(
+serializer_id Integer not null,
+serializer_name Integer null,
+public_serializer varchar(255) null,
+default_vpc varchar(255) null,
+private_serializer varchar(255) null,
+subnets_count varchar(255) null,
+public_subnet varchar(255) null,
+private_subnet varchar(255) null,
+internet_gateway varchar(255) null,
+nat_gateway varchar(255) null,
+vpc_peering varchar(255) null,
+end_point varchar(255) null,
+vpc_flow_log varchar(255) null,
+direct_connect varchar(255) null,
+constraint object_mapper_serailizer_pk primary key(serializer_id));

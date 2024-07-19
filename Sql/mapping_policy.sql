@@ -1,0 +1,15 @@
+create table if not exists mapping_policy(
+object_mapper_id Integer not null,
+manual_mapping varchar(255) null,
+automated_object_mapper char null,
+object_mapper_table_id Integer null,
+object_mapper_table_name varchar(255) null,
+simple_policy varchar(255) null,
+weighted_policy varchar(255) null,
+latency_policy varchar(255) null,
+fail_over varchar(255) null,
+geo_location Integer null,
+geo_proximity varchar(255) null,
+ip_based varchar(255) null,
+multi_value varchar(255) null,
+constraint mapping_policy_pk primary key(object_mapper_id));
